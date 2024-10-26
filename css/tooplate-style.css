@@ -111,6 +111,7 @@ b, strong {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
+  margin-bottom: 10px;
   min-width: 260px;
   position: relative;
 }
@@ -128,7 +129,7 @@ b, strong {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
+  left: ;
   animation: BottomTotop 6s linear infinite 0s;
 }
 .animated-item:nth-child(2n+2) {
@@ -173,10 +174,13 @@ b, strong {
   z-index: 999999;
   will-change: transform;
   transition: transform 200ms linear;
+  background-color: #b944f4;
+  color: antiquewhite;
 }
 .navbar[class*="-unpinned"] {
   transform: translate(0, -150%);
 }
+
 .navbar[class*="-pinned"] {
   transform: translate(0, 0);
 }
@@ -188,11 +192,14 @@ b, strong {
 }
 
 .navbar-brand {
-  font-weight: bold;
-}
+  font-weight: bold;}
 
 .navbar-expand-sm .navbar-nav .nav-link {
   padding: 0 20px;
+}
+#navbarNav {
+  text-align: center;
+  color: antiquewhite;
 }
 
 .nav-link {
@@ -259,64 +266,15 @@ b, strong {
   transition: all 0.4s ease;
   position: relative;
 }
-
+.nav-item{
+  color: #ffffff;
+}
 .copyright-text {
   font-size: 16px;
   font-weight: normal;
   display: block;
 }
 
-.color-mode {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.color-mode-icon {
-  position: relative;
-  right: 6px;
-}
-.color-mode-icon:after {
-  font-family: 'unicons';
-  content: '\ea9f';
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-}
-.color-mode-icon.active:after {
-  font-family: 'unicons';
-  content: '\eb65';
-  font-size: 30px;
-  color: #ffffff;
-}
-
-.dark-mode {
-  background: #0c0c0d;
-}
-.dark-mode .navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
-}
-.dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
-}
-.dark-mode .navbar[class*="headroom--not-top"] {
-  background: #0c0c0d;
-  border-bottom: 1px solid #1f1f1f;
-}
-.dark-mode .small-text {
-  background: #0d0c15;
-  color: #ffffff;
-}
-.dark-mode .feature-card .uil,
-.dark-mode .navbar-light .navbar-brand,
-.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
-.dark-mode .color-mode {
-  color: #ffffff;
-}
-.dark-mode .owl-carousel .owl-nav button.owl-next,
-.dark-mode .owl-carousel .owl-nav button.owl-prev,
-.dark-mode .owl-carousel button.owl-dot {
-  color: #ffffff;
-}
 
 .timeline-wrapper {
   position: relative;
